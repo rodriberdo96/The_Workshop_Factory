@@ -1,5 +1,10 @@
-.bg-dark {
-  background-color: transparent; }
+.navbar.sticky-top.navbar-expand-lg.navbar-dark.bg-trans {
+  border-bottom: 0.01rem solid !important;
+  border-bottom-color: #7c7777 !important; }
+
+.navbar {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important; }
 
 .nav-link:hover {
   color: rgba(234, 65, 4, 0.842) !important; }
