@@ -1,6 +1,6 @@
 .navbar.sticky-top.navbar-expand-lg.navbar-dark.bg-trans{
     border-bottom: 0.01rem solid !important;
-    border-bottom-color:rgb(124, 119, 119) !important;
+    border-bottom-color:rgba(255, 255, 255, 0.1) !important;
     
 }
 .navbar{
@@ -8,6 +8,13 @@
     padding-bottom: 0px !important;
 }
 
+#navbar {
+    background-color: #363434; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -100px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
 
 .nav-link:hover{
     color: rgba(234, 65, 4, 0.842)!important;

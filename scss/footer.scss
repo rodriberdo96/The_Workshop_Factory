@@ -1,6 +1,19 @@
 .footer{
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     text-align: center;
+}
+
+.footer-text{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align:left;
+}
+.footer-media {
+  text-align: end;
 }
 .fa {
     padding: 20px;
@@ -9,6 +22,7 @@
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+
   }
   .fa:hover {
     opacity: 0.7;
