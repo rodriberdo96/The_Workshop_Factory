@@ -4,17 +4,29 @@
 
 }
 
-  #navbar {
-    background-color: #363434; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    top: -100px; /* Hide the navbar 50 px outside of the top view */
-    width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  }
+.navbar-nav {
+  font-size: 15px !important; 
+}
 
-  
+#nav {
+  transition: all 0.3s ease-in-out;
 
-  /* Show the navbar when you scroll down */
+}
+
+#nav.scroll{
+  position: fixed ;
+   background-color: #0f0f0f;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.navbar-scrolled {
+  background-color: #222;
+  width: 100%;
+}
+
 
 
 .navbar {
@@ -68,39 +80,96 @@ body, html {
     color: #0a0909 !important;
     background-color: rgba(225, 105, 0, 0.295) !important; }
 
-.footer {
-  background-color: black;
-  text-align: center; }
+    .footer {
+      background-color: black;
+      color:rgba(255, 255, 255, 0.616);
+      padding: 40px;
+    }
+    
+    .footer-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .footer-block {
+      flex-basis: 100%;
+      max-width: 400px;
+    }
+    
+    .footer-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .footer-form {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    
+    .footer-form-group {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .label-footer {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+    }
+    
+    button[type="submit"] {
+      background-color: white;
+      border: none;
+      color: black;
+      font-size: 16px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    
+    .button-us {
+      background-color: #f0333f;
+      border: none;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    
+    .footer-link{
+      color:rgba(255, 255, 255, 0.616) ;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    
+
+    .footer-link:hover{
+      color: white;
+    }
 
 
 
-.footer-text,.footer-form, .footer-contact {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align:left;
-
-}
-
-.label-footer {
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-  padding-bottom: 10px; 
-}
-
-
-
-
-.footer-media {
-  text-align: end;
-}
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align:right;
+  font-size: 40px;
+  width: 40px;
+  text-align:center;
   text-decoration: none;
   border-radius: 50%; }
 

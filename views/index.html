@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="hero-image">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-trans " >
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-trans " id="nav" >
         <div class="container-fluid">
           <a class="navbar-brand col-9" href="#"><img src="../multimedia/Untitled design.png" alt="logo" class="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,30 +23,12 @@
             <div class="navbar-nav">
               <a class="nav-link active"  href="#">Home</a>
               <a class="nav-link" href="#">About us</a>
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">Workshops</a>
               <a class="nav-link " href="#">Contact us</a>
             </div>
           </div>
         </div>
       </nav>
-      
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-trans"   id="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand col-9" href="#"><img src="../multimedia/Untitled design.png" alt="logo" class="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active"  href="#">Home</a>
-                  <a class="nav-link" href="#">About us</a>
-                  <a class="nav-link" href="#">Services</a>
-                  <a class="nav-link " href="#">Contact us</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-      
         <div class="hero-text">
           <h1>I am John Doe</h1>
           <p>And I'm a Photographer</p>
@@ -54,6 +36,7 @@
         </div>
       </div>
     </div>
+    
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -119,32 +102,41 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <footer class="footer" >
-      <div class="footer-text">
-        <h3>Get in touch</h3>
-        <p>Feel free to contact us</p>
-      </div>
-      <div class="footer-form">
-        <form action="#" method="get">
-          <input type="text" placeholder="Name" >
-          <input type="email" placeholder="Email">
-          <textarea name="" id="" cols="10" rows="5" placeholder="Message"></textarea>
-          <button class="button-us">Send</button>
-        </form>
-      </div>
-      <div class="footer-contact">
-        <h3>Contact us</h3>
-        <p>Phone: 123-456-7890</p>
-        <p>Email:
-          <a href="mail to: aleberdomas@gmail.com "></a>
-        </p>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-block">
+          <h3 class="footer-title">Get in touch</h3>
+          <form action="#" method="get" class="footer-form">
+            <div class="footer-form-group">
+              <label for="name" class="label-footer">Name</label>
+              <input type="text" id="name" placeholder="Your name">
+            </div>
+            <div class="footer-form-group">
+              <label for="email" class="label-footer">Email</label>
+              <input type="email" id="email" placeholder="Your email">
+            </div>
+            <div class="footer-form-group">
+              <label for="message" class="label-footer">Message</label>
+              <textarea id="message" rows="5" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="button-us">Send</button>
+          </form>
+        </div>
+        <div class="footer-block">
+          <h3 class="footer-title">Contact us</h3>
+          <p class="footer-text">Phone: 123-456-7890</p>
+          <p class="footer-text">Email: <a href="mailto:aleberdomas@gmail.com" class="footer-link">aleberdomas@gmail.com</a></p>
+        </div>
+        <div class="footer-block">
+          <h3 class="footer-title">Follow us</h3>
+          <div class="footer-media">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
       </div>
       <div class="footer-rights">
-        <h3> © The Workshop Factory All rights reserved</h3>
-      </div>
-      <div class="footer-media">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
+        <p class="footer-text">© The Workshop Factory All rights reserved</p>
       </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>

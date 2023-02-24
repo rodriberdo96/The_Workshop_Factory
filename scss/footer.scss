@@ -1,43 +1,107 @@
-.footer{
-    background-color: rgb(0, 0, 0);
-    text-align: center;
+.footer {
+  background-color: black;
+  color:rgba(255, 255, 255, 0.616);
+  padding: 40px;
 }
 
-.footer-text{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align:left;
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.footer-media {
-  text-align: end;
+
+.footer-block {
+  flex-basis: 100%;
+  max-width: 400px;
 }
+
+.footer-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-form-group {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.label-footer {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button-us {
+  background-color: #f0333f;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer-link{
+  color:rgba(255, 255, 255, 0.616) ;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+
+.footer-link:hover{
+  color: white;
+}
+
+
+
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
+padding: 20px;
+font-size: 40px;
+width: 40px;
+text-align:center;
+text-decoration: none;
+border-radius: 50%; }
 
-  }
-  .fa:hover {
-    opacity: 0.7;
-  }
-  /* Facebook */
-  .fa-facebook {
-    background: #000;
-    color: white;
-  }
-  /* Instagram */
-  .fa-instagram {
-    background: #000;
-    color: white;
-    &:hover{
-        color: #f0333f; 
-        }
-    }
-  
+.fa:hover {
+opacity: 0.7; }
+
+/* Facebook */
+.fa-facebook {
+background: #000;
+color: white; }
+
+/* Instagram */
+.fa-instagram {
+background: #000;
+color: white; }
+.fa-instagram:hover {
+color: #f0333f; }
