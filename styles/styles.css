@@ -1,3 +1,5 @@
+/* Navbar */
+
 .navbar.sticky-top.navbar-expand-lg.navbar-dark.bg-trans {
   border-bottom: 0.01rem solid !important;
   border-bottom-color: rgba(255, 255, 255, 0.1) !important; 
@@ -44,6 +46,7 @@
 body, html {
   height: 100%; }
 
+
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -80,16 +83,60 @@ body, html {
     color: #0a0909 !important;
     background-color: rgba(225, 105, 0, 0.295) !important; }
 
-    .footer {
-      background-color: black;
-      color:rgba(255, 255, 255, 0.616);
-      padding: 40px;
+
+    /* About us */
+
+    .about-us {
+      background-color: #161616; /* Set background color */
+      padding: 50px; /* Add some padding around the content */
     }
     
-    .footer-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    /* Style the heading */
+    .about-us h2 {
+      font-size: 60px; /* Increase font size */
+      margin-bottom: 40px; /* Add some space below the heading */
+      color: white;
+      margin-top: 30px;
+    }
+    
+    .about-us h2 em{
+      color: orangered;
+    }
+    /* Style the paragraph */
+    .about-us p {
+      font-size: 25px; /* Increase font size */
+      line-height: 1.5; /* Set line height to improve readability */
+      color: white;
+    }
+
+
+.image-ale{
+    height: 60%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 80%;
+}
+
+
+
+.image-ale:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+
+/* Footer */
+.footer {
+  background-color: black;
+  color:rgba(255, 255, 255, 0.616);
+  padding: 40px;
+}
+
+  .footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
     }
     
     .footer-block {
